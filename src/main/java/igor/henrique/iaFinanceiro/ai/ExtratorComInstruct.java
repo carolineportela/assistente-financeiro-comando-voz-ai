@@ -10,7 +10,7 @@ public class ExtratorComInstruct {
 
     public static InterpretacaoTransacao dadosTransacao(String frase) {
         String apiKey = System.getenv("OPENAI_APIKEY");
-        OpenAiService service = new OpenAiService("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");
+        OpenAiService service = new OpenAiService(apiKey);
 
         String prompt = """
             A partir da frase abaixo, identifique:
